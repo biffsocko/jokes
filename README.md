@@ -5,7 +5,9 @@ joke client and server <br>
 joke data is from https://www.kaggle.com/datasets/abhinavmoudgil95/short-jokes?resource=download
 
 
-Dockerfile:<br>
+
+#Dockerfile:<br>
+
 \# port 65433<br>
 FROM  python:latest<br>
 COPY shortjokes.txt /shortjokes.txt <br>
