@@ -12,8 +12,8 @@ import random
 
 DEBUG=0
 jokes=[]
-HOST = "0.0.0.0"  # Standard loopback interface address (localhost)
-PORT = 65433  # Port to listen on (non-privileged ports are > 1023)
+HOST = "0.0.0.0" # use this IP to listen on all interfaces
+PORT = 65433  
 
 with open('shortjokes.txt', 'r', newline='') as jokefile:
 
@@ -31,7 +31,9 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         with conn:
             if(DEBUG > 0 ):
                 print(f"Connected by {addr}")
-
+                
+            # randiomize jokes haha  funny
+            # you never know what you get
             rand = random.randint(0, bignum - 1)
             conn.send(jokes[rand].encode())
             conn.close()
