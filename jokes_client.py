@@ -27,3 +27,4 @@ print("Received response from server:", response.decode())
 
 # Close the socket connection
 sock.close()
+exit(0)
