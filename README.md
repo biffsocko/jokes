@@ -17,6 +17,6 @@ CMD /jokes.py<br>
 
 
 <h2>Dockerfile - client:<br></h2>
-FROM  python:latest
-COPY jokes_client.py /jokes_client.py
-CMD /jokes_client.py
+FROM  python:latest<br>
+COPY jokes_client.py /jokes_client.py<br>
+CMD /jokes_client.py<br>
